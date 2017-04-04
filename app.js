@@ -1,5 +1,8 @@
-var movie = require("./movie");
-var threeFavoriteMovies = [];
+'use strict'
+
+var movieApi = require('./movie.js');
+
+var threeFavoriteMovies = ["Tarzan", "Logan", "Ted"];
 threeFavoriteMovies.forEach(function(film){
-  // your code here
+	movieApi(film);
 });
